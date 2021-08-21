@@ -18,90 +18,124 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-4 col-sm-3">
-                <img class="img-fluid" src="images/mac.png" alt="">
 
-            </div>
+    <header>
 
-            <div class="col-lg-6 col-md-4 col-sm-4">
+    </header>
 
-                <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
-                <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
-                    16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse
-                    Magic Keyboard -US English</p>
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-4 col-sm-3 ">
+                    <img class=" img-fluid" src="images/mac.png" alt="">
 
-                <div class="memory my-3">
-                    <h2 class="mb-3">Memory</h2>
-                    <button type="button" class="btn btn-outline-secondary btn-lg">8GB Unified Memory</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg">16GB Unified Memory</button>
                 </div>
 
-                <div class="storage my-3">
-                    <h2 class="mb-3">Storage</h2>
-                    <button type="button" class="btn btn-outline-secondary btn-lg">256GB SSD Storage</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg">512GB SSD Storage</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg">1TB SSD Storage</button>
-                </div>
+                <div class="col-lg-6 col-md-4 col-sm-4 ">
 
-                <div class="delivery my-3">
-                    <h2 class="mb-3">Choose your delivery option</h2>
-                    <button type="button" class="btn btn-outline-secondary ">Friday,Aug 25 FREE Prime
-                        Delivery</button>
-                    <button type="button" class="btn btn-outline-danger ">Friday, Aug 21 Delivery charge
-                        $20</button>
-                </div>
+                    <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                        16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic
+                        Mouse
+                        Magic Keyboard -US English</p>
 
-                <div class="row mt-5">
-                    <div class="col-lg-12 ">
-                        <div class="d-flex justify-content-between">
-                            <h5 class="d-inline">Best Price</h5>
+                    <!--========== MEMORY SECTION ==========-->
 
-                            <h5 class="d-inline">$ <span class="best-price">1299</span></h5>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <h5 class="d-inline">Extra Memory Cost</h5>
-                            <h5 class="d-inline">$ <span class="memory-cost">0</span></h5>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <h5 class="d-inline">Extra Storage Cost</h5>
-                            <h5 class="d-inline">$ <span class="storage-cost">0</span></h5>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <h5 class="d-inline">Delivery Charge</h5>
-                            <h5 class="d-inline">$ <span class="delivery-charge">0</span></h5>
-                        </div>
-                        <hr size="5px">
+                    <div class="memory mt-5">
+                        <h2 class="mb-3">Memory</h2>
+                        <button id="8gb-button" type="button" class="btn btn-outline-secondary btn-lg">8GB Unified
+                            Memory</button>
+                        <button id="16gb-button" type="button" class="btn btn-outline-secondary btn-lg">16GB Unified
+                            Memory</button>
+                    </div>
 
-                        <div class="d-flex justify-content-between">
-                            <h5 class="d-inline">Total Price</h5>
-                            <h5 class="d-inline">$ <span class="total-price">1299</span></h5>
-                        </div>
-                        <hr>
+                    <!--========== STORAGE SECTION ==========-->
 
-                        <div class="mb-5">
+                    <div class="storage mt-5">
+                        <h2 class="mb-3">Storage</h2>
+                        <button id="ssd-256-button" type="button" class="btn btn-outline-secondary btn-lg">256GB SSD
+                            Storage</button>
+                        <button id="ssd-512-button" type="button" class="btn btn-outline-secondary btn-lg">512GB SSD
+                            Storage</button>
+                        <button id="ssd-1tb-button" type="button" class="btn btn-outline-secondary btn-lg">1TB SSD
+                            Storage</button>
+                    </div>
 
-                            <h5>Add Promo Code</h5>
-                            <input id="input-promo" class="pb-1" type="text"><button type="button"
-                                class="btn btn-danger btn-sm">Apply</button>
+                    <!--========== DELIVERY SECTION ==========-->
+
+                    <div class="delivery mt-5 ">
+                        <h2 class="mb-3">Choose your delivery option</h2>
+                        <button id="free-shipping-button" type="button" class="btn btn-outline-secondary ">Friday,Aug 25
+                            FREE Prime
+                            Delivery</button>
+                        <button id="premium-shipping-button" type="button" class="btn btn-outline-danger ">Friday, Aug
+                            21 Delivery charge
+                            $20</button>
+                    </div>
+
+                    <!--======== PRICING SECTION  =========-->
+
+                    <div class="row mt-5 ">
+                        <div class="col-lg-12 ">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="d-inline">Best Price</h5>
+
+                                <h5 class="d-inline">$ <span id="best-price">1299</span></h5>
+                            </div>
+                            <hr>
+
+
+                            <div class="d-flex justify-content-between">
+                                <h5 class="d-inline">Extra Memory Cost</h5>
+                                <h5 class="d-inline">$ <span id="extra-memory-price" class="memory-cost">0</span></h5>
+                            </div>
+                            <hr>
+
+
+                            <div class="d-flex justify-content-between">
+                                <h5 class="d-inline">Extra Storage Cost</h5>
+                                <h5 class="d-inline">$ <span id="extra-ssd-price" class="storage-cost">0</span></h5>
+                            </div>
+                            <hr>
+
+
+                            <div class="d-flex justify-content-between">
+                                <h5 class="d-inline">Delivery Charge</h5>
+                                <h5 class="d-inline">$ <span id="delivery-price" class="delivery-charge">0</span></h5>
+                            </div>
+                            <hr size="5px">
+
+                            <div class="d-flex justify-content-between">
+                                <h5 class="d-inline">Total Price</h5>
+                                <h5 class="d-inline">$ <span id="total-price">1299</span></h5>
+                            </div>
+                            <hr>
+
+                            <div class="mb-5">
+
+                                <h5>Add Promo Code</h5>
+                                <input id="input-promo" class="pb-1" type="text"><button id="apply-button" type="button"
+                                    class="btn btn-danger btn-sm mx-1">Apply</button>
+
+                            </div>
 
                         </div>
 
                     </div>
-
                 </div>
-            </div>
 
-            <hr>
-            <div class="d-flex justify-content-center">
-                <h2>Total $1299</h2>
+                <hr>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer>
+
+        <div class="d-flex justify-content-center">
+            <h2>Total $1299</h2>
+        </div>
+
+    </footer>
 
 
 
@@ -109,12 +143,15 @@
 
 
 
+
+    <!--======= BS CDN =======-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
         integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
         integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
         crossorigin="anonymous"></script>
+    <!--======= Javascript Linked =======-->
     <script src="JS/apple.js"></script>
 </body>
 
